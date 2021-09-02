@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x:hidden;
+}
+/**************************************** navigators ******************************/
+.navigator{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    position:fixed;
+    bottom: 5%;
+    right:2%;
+    cursor:pointer;
+    box-shadow:0px 8px 7px rgb(104, 104, 104);
+    background-color: rgb(2, 46, 87);
+}
+.navigator i{
+    margin-top: 25%;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/**************************************** top nav ******************************/
+h1{
+    font-family: 'Varela Round', sans-serif;
+}
+p{
+    font-family: 'Fira Sans', sans-serif;
+}
+nav{
+    height: auto;
+    background-color:rgb(2, 46, 87);
+    align-items: center;
+    padding: 15px 2px;
+    box-shadow: 0 5px 7px gray;
+}
+.fab{
+    font-size: 40px;
+}
+.logo{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    padding: 0.5% 0 0 5%;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 2px 2px rgb(187, 186, 186);
+}
+
+.menu{ 
+    display: inline-block;
+    width: 65%;
+    height: auto;
+    text-align: right;
+}
+.menu a{
+    margin-right: 5%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    position: relative;
+}
+.menu a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+.menu a:hover::before{
+    width: 100%;
+}
+.nav-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .menu{
+      display: none;
+   }
+   .logo{
+       width: 50%;
+   }
+   .nav-icon{
+       width: 45%;
+       text-align: right;
+       padding-right: 5%;
+       display: inline-block;
+       color: white;
+       font-size: 25px;  
+   }
+   .navigator{
+      width: 40px;
+      height: 40px;
+   }
+   .navigator i{
+       font-size: 12px;
+       margin-top: 35%;
+   }
+  }
+  .menu-after-toggle{
+      width: 30%;
+      display: inline-block;
+      background-color: rgb(2, 46, 87);
+      position: absolute;
+      right: 1px;
+      float: right;
+      text-align: center;
+      padding: 2%;
+      border-radius: 2px;
+      opacity: 0.9;
+      visibility: hidden;
+  }
+  .menu-after-toggle a{
+      display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+   margin-top: 20px;  
+}
+
+.menu-after-toggle-visible{
+visibility: visible;
+ height: auto;
+}
+
+/**************************************** home page container first ******************************/
+
+#home-container{
+    width: 100%;
+    height: auto;
+    padding: 0 5%;
+     display: flex;
+}
+.home-cont-div1{
+    flex: 1;
+      padding: 12% 0 15% 5%;
+    color: rgb(2, 46, 87);
+}
+.home-cont-div1 button{
+    margin-top: 3%;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: rgb(255, 215, 39);
+    transition: 2s all;
+}
+
+.home-cont-div1 button a:hover{
+    color: white;
+}
+.home-cont-div1 button:hover{
+    background-color: rgb(2, 46, 87);
+    color: white;
+    box-shadow: 0px 10px 10px gray;
+}
+
+.home-cont-div2{
+    flex: 1;
+ padding: 5% 5% 5% 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    #home-container{
+        width: 100%;
+        height: 500px;
+        padding-top: 30px;
+         display:inline-block;
+         background-image: url(images/banner-opacity.png);
+         background-position: center;
+         background-size: cover; 
+    }
+    .home-cont-div1 button{
+        margin-top: 40px;
+    }
+    .home-cont-div2{
+        display: none;
+    }
+  }
+
+
+
+/**************************** all categories  container second **************************/
+
+#third-container{
+    width: 100%;
+    height: auto;
+    padding: 10% 15%;
+    background-color:rgb(2, 46, 87); 
+    text-align: center;
+    color: white;
+
+}
+#third-container h6{
+    color:rgb(255, 238, 0);
+}
+.course-wise-cards{
+    display: flex;
+    height: 120px;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    padding: 7%;
+}
+.course-wise-cards .icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(2, 46, 87);
+    padding: 4.5%;
+}
+.course-wise-cards i{
+    font-size: 40px;
+}
+.course-wise-cards .containt{
+    text-align: left;
+    margin-left: 5%;
+}
+.course-wise-cards p{
+    color: black;
+    font-family:sans-serif;
+    text-align: left;
+    font-size: 14px;
+}
+.course-wise-cards a{
+    text-decoration: none;
+    color: rgb(2, 46, 87);
+    font-weight: 600;
+    font-size: 17px;
+}
+.course-wise-cards a:hover{
+    text-decoration:underline;
+}
+.web-icon i{ 
+    color: orangered;
+}
+.web-icon i:hover{
+    font-size: 50px;
+}
+
+.desktop-icon i{
+   color: rgb(26, 218, 243);
+}
+.android-icon i{
+    color:chartreuse;
+}
+.database-icon i{
+     color:rgb(162, 57, 234);
+}
+.FrontEnd-icon i{
+    color: rgb(26, 218, 243);
+}
+.BackEnd-icon i{
+    color:rgb(250, 255, 0);
+}
+.software-icon i{
+color: rgb(247, 164, 64);
+}
+.networking-icon i{
+color: rgb(102, 222, 147);
+}
+.graphics-icon i{
+color: rgb(248, 72, 94);
+}
+.more-topics-btn{
+   transition: 0.2s;
+}
+.more-topics-btn:hover{
+   background-color: white;
+   color: rgb(2, 46, 87);
+   box-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+
+
+
+
+
+ 
+  /************************************ subjects card container third ******************************/
+
+  #second-cont{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 7% 15%;
+    background-color: white;
+}
+.second-cont-heading6{
+    color: rgb(42, 115, 184);
+}
+.second-cont-heading{
+    font-family: "Sen",sans-serif;
+    font-weight: 700;
+    margin: 2% 0 6% 0;
+}
+  
+  .subject-cards{
+      height: 400px;
+      border: 1px solid rgb(189, 189, 189);
+      border-radius: 2px;
+      margin:3% 2%;
+      padding: 15% 10%;
+      transition: 0.5s all;
+      text-align: left;
+      color: rgb(2, 46, 87);
+      overflow: hidden;
+  }
+
+  .subject-cards i{
+      font-size: 4rem;
+      margin-bottom: 15%;
+     
+  }
+  .subject-cards h3{
+     margin-bottom: 10%;
+     
+  }
+
+  .subject-cards p{
+    margin-bottom: 15%;
+    font-family:sans-serif;
+ }
+ .java-heading{
+     font-weight: 700;
+ }
+ 
+ .subject-cards a{
+   text-decoration: none;
+   color: rgb(117, 117, 117);
+   font-weight: 600;
+ }
+ .subject-cards a:hover{
+     text-decoration: underline;
+ }
+ .subject-cards:hover{
+     border: none;
+     box-shadow:  7px 7px 10px rgb(112, 112, 112);
+    background-color: rgb(2, 46, 87); 
+    color: white;
+}
+.find-more-courses-btn a{
+    text-decoration: none;
+    color: black;
+}
+.find-more-courses-btn a:hover{
+    color: white;
+}
+.find-more-courses-btn{
+    margin-top: 7%;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: rgb(255, 215, 39);
+   transition:  0.2s;
+}
+
+.find-more-courses-btn:hover{
+    color: white;
+background-color:rgb(2, 46, 87); 
+box-shadow: 0px 10px 10px blue;
+}
+
+
+
+
+
+
+ /**************************** counter up container fourth **************************/
+
+ #fourth-container{
+    width: 100%;
+    height: auto;
+    padding: 10% 13%;
+   background-color: rgb(2, 46, 87); 
+}
+ .count-div{
+    height: auto;
+    text-align: center;
+    margin: 5%;
+ }
+ .count-icon{
+     font-size: 50px;
+     display: block;
+ }
+ .count-div h3{
+     font-size: 25px;
+      margin-top: 4%;
+     display: inline-block;
+ }
+ .count-div-1 i{
+   color: rgb(0, 243, 207);
+ }
+ .count-div-1 h3{
+    color: rgb(0, 243, 207);
+  }
+
+ .count-div-2 i{
+    color: rgb(255, 215, 39); 
+  }
+  .count-div-2 h3{
+    color: rgb(255, 215, 39);
+  }
+
+  .count-div-3 i{
+    color: rgb(102, 255, 0);
+  }
+  .count-div-3 h3{
+    color: rgb(102, 255, 0);
+  }
+
+  .count-div-4 i{
+    color: rgb(255, 94, 0);
+  }
+  .count-div-4 h3{
+    color: rgb(255, 94, 0);
+  }
+
+  @media only screen and (max-width: 700px) {
+    .graphic-card,.networking-card,.software-engineer-card{
+        display: none;
+    }
+  }
+
+
+
+
+/**************************** updates page **************************/
+
+.updates-cont{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid gray;
+    text-align: center;
+    padding: 2% 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(194, 247, 132);
+}
+.updates-cont img{
+    width: 150px;
+    height: 150px;
+}
+.update-div1{
+    color:  rgb(2, 46, 87);
+    border-right: 2px solid rgb(2, 46, 87); 
+}
+.update-div2{
+    color:  rgb(2, 46, 87);
+    border-left: 2px solid rgb(2, 46, 87); 
+}
+
+@media only screen and (max-width: 900px) {
+    .updates-cont img{
+        width: 110px;
+        height: 110px;
+    }       
+}
+
+@media only screen and (max-width: 700px) {
+    .updates-cont img{
+        width: 90px;
+        height: 90px;
+    }       
+}
+
+
+/**************************** services container fifth **************************/
+
+ #services-cont{
+     background-color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+     padding: 6% 10%;
+}
+#services-cont span{
+    color: rgb(0, 144, 228);
+    font-weight: 500;
+}
+#services-cont h1{
+   font-family: sans-serif;
+   font-weight: 600;
+   margin: 1% 0 7% 0;
+    
+}
+.services-containt{
+    margin-top: 3%;
+    height: 400px;
+}
+.service-png{
+    margin-top: 3%;
+    height: 400px;
+}
+
+.quiz-services{
+    display: flex;
+    height: 100px;  
+}
+.services-icons{
+    width: 20%;
+    display: inline-block;
+}
+.services-containts{
+    width: 78%;
+    text-align: left;
+ display: inline-block;
+}
+.services-containts h2{
+   color:rgb(4, 73, 138);
+}
+.Practice-quiz-icon i{
+    font-size: 50px;
+    color: rgb(4, 73, 138);
+}
+@media only screen and (max-width: 700px) {
+    .services-icons{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    
+    .services-containts{
+        width: 67%;
+    }
+   .service-png{
+        display: none;
+    }
+    #services-cont{
+        background-image: url(images/imageedit_2_3223136469.png);
+        background-position: center;
+        background-size: cover;
+        padding: 15% 10%;
+    }
+
+  }
+
+/**************************** footer container sixth **************************/
+
+#footer{
+width: 100%;
+height: auto;
+padding: 3% 15% 2%;
+background-color: rgb(8, 32, 50);
+}
+
+.footer-cont-divs{
+    color: white;
+   margin-bottom: 10%;
+}
+.footer-cont-divs h2{
+    margin-bottom: 10%;
+    font-family: 'Varela Round', sans-serif;
+}
+.footer-cont-divs a{
+    display: block;
+    margin-bottom: 4%;
+    text-decoration: none;
+    font-size: 16px;
+    color: grey;
+}
+#footer hr{
+    height: 3px;
+    background-color: gray;
+}
+#footer p{
+    color: rgb(177, 177, 177);
+    font-family:cursive;
+    text-align: center;
+}
+.stay-updated-divs{
+    color: white;
+    padding: 2%;
+    margin: 10% 0 15% 0;
+}
+.subscribe-btn-div  h2{
+    margin-bottom: 7%;
+}
+.subscribe-btn-div input{
+    padding: 3%;
+    width: 67%;
+    height: 60px;
+    border: none;
+    margin-top: 2%;
+}
+.subscribe-btn-div button{
+    border: none;
+    margin-top: 1%;
+   padding: 2%;
+    height: 60px;
+    color: white;
+    background-color: rgb(255, 215, 39);
+}
+
+
+
+.social-links h2{
+    margin-left: 4%;
+    margin-bottom: 7%;
+}
+.social-links button{
+    margin-left: 4%;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 2%;
+}
+.social-links button a i{
+    color: white;
+    font-size: 20px
+}
+.social-links .facebook{
+    background-color: rgb(66, 103, 178);
+}
+.social-links .twitter{
+    background-color: rgb(29, 161, 242);
+}
+.social-links .google{
+    background-color: rgb(219,74,57);
+} 
+.social-links .linkedIn{
+background-color: rgb(0,119,181);
+}
+.social-links button:hover{
+    background-color: rgb(8, 218, 130);
+}
