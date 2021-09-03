@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../images/favicon.ico">
+    <title>Loading...</title>
+    <script src="https://kit.fontawesome.com/51ff62bafd.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(2, 46, 87);
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .loading-logo {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            color: white;
+            line-height: 3;
+             animation: mymove 2s infinite; 
+        }
+        .loading-logo img{
+            width: 150px;
+            height: 150px;
+        }
+         @keyframes mymove {
+            100% {
+                transform: rotate(360deg);
+            }
+        } 
+
+        .loading-logo i {
+            font-size: 150px;
+            color: white;
+        } 
+    </style>
+</head>
+
+<body onload="setTimeout()">
+
+    <!-- <h1>Loading...</h1>
+  <h1>Do some Loading Animation</h1> -->
+  <div class="container">
+    <div class="loading-logo"><i class="fab fa-codepen"></i></div>
+  </div>
+    
+
+
+
+
+    <script language=javascript>
+        setTimeout(function () {
+            window.location = "./index.html";
+         }, 4000);
+        </script>
+</body>
+
+</html>
