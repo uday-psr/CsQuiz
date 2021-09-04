@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/51ff62bafd.js" crossorigin="anonymous"></script>
+    
+    <title>Cs_Quiz</title>
+</head>
+
+<body>
+
+    <!-------------------------------------------- Float navigator ------------------------------------------->
+
+    <a href="#">
+        <div class="navigator"><i class="fas fa-chevron-up"></i></div>
+    </a>
+
+    <!-------------------------------------------- navbar ------------------------------------------->
+    <nav>
+        <div class="logo">
+            <h1><i class="fab fa-codepen"></i> CsQuiz</h1>
+        </div>
+        <span class="nav-icon" onclick="myFunction()"><i class="fas fa-bars"></i></span>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="Quiz-Subject-pages/Languages/C-page/quiz-load.html">Quizzes</a>
+            <a href="Lectures/Main-quizzes.html">Lectures</a>
+            <a href="#services-cont">Services</a>
+            <a href="contact/contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="menu-after-toggle ">
+        <a href="#">Home</a>
+        <a href="Quiz-Subject-pages/Languages/C-page/quiz-load.html">Quizzes</a>
+        <a href="Lectures/Main-quizzes.html">Lectures</a>
+        <a href="#services-cont">Services</a>
+        <a href="contact/contact.html">Contact</a>
+    </div>
+
+
+    <!---------------------------------- container first home page --------------------------------------------->
+
+    <div id="home-container">
+
+        <div class="home-cont-div1">
+            <h1>
+                Start Learning with CsQuiz and Embrace New Skills For Better Future.
+
+            </h1>
+            <p>With the help of E-Learing. Create your own path and drive on your skills on your own <br>
+                to achieve what you seek.
+            </p>
+            <a href="Quiz-Subject-pages/Languages/C-page/Main-quizzes.html"><button data-aos="slide-up">View All
+                    Courses</button></a>
+        </div>
+
+        <div class="home-cont-div2" data-aos="slide-left">
+            <img src="images/banner.png" alt="not">
+        </div>
+
+    </div>
+
+
+    <!---------------------------------------All courses container third-------------------------------->
+
+    <div id="third-container">
+
+        <h6 class="second-cont-heading6 cont-3rd-h6">All Your Great Stuff Is Here</h6>
+        <h1 class="second-cont-heading">Let's Browse All Categories</h1>
+
+        <div class="row">
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards" data-aos="slide-right">
+                    <div class="icon desktop-icon"><i class="fab fa-windows"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/Languages/CPP-page/cpp-topics.html">DESKTOP DEVELOPMENT</a>
+                        <p>C++,Java,Python...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards" data-aos="slide-up">
+                    <div class="icon web-icon"><i class="fab fa-html5 web-icon"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/web-dev/html-page/Html-topics.html">WEB DEVELOPMENT</a>
+                        <p>Html,Css,Java-script...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards" data-aos="slide-left">
+                    <div class="icon android-icon"><i class="fab fa-android"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages//Languages/java-page/java-topics.html">ANDROID DEVELOPMENT</a>
+                        <p>XML,Java,Kotlin...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards" data-aos="slide-right">
+                    <div class="icon database-icon"><i class="fas fa-database"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/core-sub/DBMS-page/DBMS-topics.html">DATABASE-DESIGN</a>
+                        <p>Sql,No-sql,MongoDB...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards" data-aos="slide-up">
+                    <div class="icon FrontEnd-icon"><i class="fab fa-react"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/web-dev/React-page/React-topics.html">FRONT-END FRAMEWORKS</a>
+                        <p>bootstrap,Vue,Angular...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards" data-aos="slide-left">
+                    <div class="icon BackEnd-icon"><i class="fab fa-node-js"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/web-dev/node-page/Node-topics.html">BACK-END FRAMEWORKS</a>
+                        <p>django,Express,Flask...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards software-engineer-card" data-aos="slide-right">
+                    <div class="icon software-icon"><i class="fas fa-code"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/other-sub/software-eng-page/SE-topics.html">SOFTWARE ENGINEERING</a>
+                        <p>SDLC,Design,Testing...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards networking-card" data-aos="slide-up">
+                    <div class="icon networking-icon"><i class="fas fa-server"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/core-sub/Networking-page/Networking-topics.html">NETWORKING</a>
+                        <p>OSI,TCP/IP,UDP...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="course-wise-cards graphic-card" data-aos="slide-left">
+                    <div class="icon graphics-icon"><i class="fab fa-unity"></i></div>
+                    <div class="containt">
+                        <a href="Quiz-Subject-pages/other-sub/comp-graphics-page/Graphics-topics.html">COMPUTER
+                            GRAPHICS</a>
+                        <p>Crt,Dvst,Line & Circle Algo...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="Quiz-Subject-pages/Languages/C-page/Main-quizzes.html"><button
+                class="find-more-courses-btn more-topics-btn">Find More Topics</button></a>
+    </div>
+
+
+
+    <!-------------------------------- container second home page ------------------------------------>
+
+    <div id="second-cont">
+
+        <h6 class="second-cont-heading6">Popular Quizzes</h6>
+        <h1 class="second-cont-heading">Let's Check Your Skills</h1>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="subject-cards">
+                    <i class="fab fa-java java-heading"></i>
+                    <h3>Java</h3>
+                    <p>In this you will get questions from Opps,Multithreading,Exceptions, Interfaces,I/O Streams and
+                        others.</p>
+                    <a href="Quiz-Subject-pages/Languages/java-page/quiz/Language_Fundamentals/quiz-load.html">Start
+                        Quiz ></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="subject-cards">
+                    <i class="fab fa-ubuntu"></i>
+                    <h3>Operating System</h3>
+                    <p>OS includes the Management of Resources,Process,Storage,Security and many more.</p>
+                    <a href="Quiz-Subject-pages/core-sub/OS-page/quiz/Overview_of_OS/quiz-load.html">Start Quiz ></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="subject-cards">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Data Structures</h3>
+                    <p>Data structures is use to manage large amounts of data efficiently for uses such as large
+                        databases.</p>
+                    <a href="Quiz-Subject-pages/core-sub/DS-page/quiz/Linked_list/quiz-load.html">Start Quiz ></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="subject-cards">
+                    <i class="fas fa-database"></i>
+                    <h3>DBMS</h3>
+                    <p>A database management system (DBMS) is system software for creating and managing databases. </p>
+                    <a href="Quiz-Subject-pages/core-sub/DBMS-page/quiz/Introduction_to_Database/quiz-load.html">Start
+                        Quiz ></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="subject-cards">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Computer Network</h3>
+                    <p>A computer network is a set of devices connected through guided or unguided media.</p>
+                    <a href="Quiz-Subject-pages/core-sub/Networking-page/quiz/Networking_Basics/quiz-load.html">Start
+                        Quiz ></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="subject-cards">
+                    <i class="fas fa-microchip"></i>
+                    <h3>8085 microprocessor</h3>
+                    <p>8085 is an 8-bit microprocessor designed by Intel in 1977 using NMOS technology.</p>
+                    <a href="Quiz-Subject-pages/other-sub/conputer-archi-page/quiz/8085_microprocessor/quiz-load.html">Start
+                        Quiz ></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="Quiz-Subject-pages/Languages/C-page/Main-quizzes.html"><button class="find-more-courses-btn">Find More
+                Quizzes</button></a>
+    </div>
+
+
+    <!---------------------------------------number increasing container fourth-------------------------------->
+
+    <div id="fourth-container" data-aos="flip-right">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="count-div count-div-1">
+                    <i class="fas fa-laptop-code count-icon"></i> <br>
+                    <h3 class="count">1400</h3>
+                    <h3>+ Topics</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="count-div count-div-2">
+                    <i class="fas fa-book-reader count-icon"></i><br>
+                    <h3 class="count">10000</h3>
+                    <h3>+ Learner</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="count-div count-div-3">
+                    <i class="fab fa-codepen count-icon"></i><br>
+                    <h3 class="count">3500</h3>
+                    <h3>+ Quizzes</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="count-div count-div-4">
+                    <i class="fas fa-user-tie count-icon"></i></i><br>
+                    <h3 class="count">70</h3>
+                    <h3>+ Team Members</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ 
+
+    <!---------------------------------------services container fifth-------------------------------->
+
+    <div id="services-cont">
+        <span>We Are Trying To Give Our Best</span>
+        <h1 data-aos="flip-left">WE OFFER SERVICES</h1>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="services-containt">
+
+                    <div class="quiz-services Practice-quiz" data-aos="flip-up">
+                        <div class="services-icons Practice-quiz-icon"><i class="fab fa-codepen"></i></div>
+                        <div class="services-containts Practice-quiz-containt">
+                            <h2 href="#">Practice Quizzes</h2>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="quiz-services Practice-quiz" data-aos="flip-up">
+                        <div class="services-icons Practice-quiz-icon"><i class="fab fa-free-code-camp"></i></div>
+                        <div class="services-containts Practice-quiz-containt">
+                            <h2 href="#">Free Access</h2>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="quiz-services Practice-quiz" data-aos="flip-up">
+                        <div class="services-icons Practice-quiz-icon"><i class="far fa-play-circle"></i></div>
+                        <div class="services-containts Practice-quiz-containt">
+                            <h2 href="#">Video Lectures</h2>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="quiz-services Practice-quiz" data-aos="flip-up">
+                        <div class="services-icons Practice-quiz-icon"><i class="fas fa-headset"></i></div>
+                        <div class="services-containts Practice-quiz-containt">
+                            <h2 href="#">Direct Call Support 24X7</h2>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="service-png" data-aos="slide-left">
+
+                    <img src="images/contact.png" alt="image not found">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+       <!---------------------------------------updates page-------------------------------->
+
+       <div class="updates-cont">
+        <h2>New Updates</h2>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="update-div1">
+                    <marquee behavior="alternate" direction="right"><img src="./images/video-lecture.png" alt="">
+                    </marquee>
+                    <h5>Good News! You will get <h4>video Lectures</h4> of all the subjects Soon...</h5>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="update-div2">
+                    <marquee behavior="alternate" direction="left"><img src="./images/android-app.png" alt=""></marquee>
+                    <h5>Good News! We are launching The <h4>Android Version</h4> of CsQuiz soon...</h5>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------------------footer container sixth-------------------------------->
+
+    <div id="footer">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="subscribe-btn-div stay-updated-divs">
+                    <h2>Stay Updated</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Email Address"><button>Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="social-links stay-updated-divs">
+                    <h2>Stay Updated</h2>
+                    <button class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></button>
+                    <button class="twitter"><a href=""><i class="fab fa-twitter"></i></a></button>
+                    <button class="google"><a href=""><i class="fab fa-google-plus-g"></i></a></button>
+                    <button class="linkedIn"><a href=""><i class="fab fa-linkedin-in"></i></a></button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="footer-cont-divs">
+                    <h2>About Us</h2>
+
+                    <a href="#">Online Learning</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Quizzes</a>
+                    <a href="#">Become an Instructor</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="footer-cont-divs">
+                    <h2>Free Solution</h2>
+                    <a href="#">Our Plans</a>
+                    <a href="#">Free Trial</a>
+                    <a href="#">Academic Solutions</a>
+                    <a href="#">Business Solutions</a>
+                    <a href="#">Policies</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="footer-cont-divs">
+                    <h2>Study</h2>
+                    <a href="#">Registration</a>
+                    <a href="#">Getting Started</a>
+                    <a href="#">Payment Information</a>
+                    <a href="#">Tuition Calculator</a>
+                    <a href="#">Request Information</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="footer-cont-divs">
+                    <h2>Support</h2>
+                    <a href="#">Support </a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">System Requirements</a>
+                    <a href="#">Registration help</a>
+                    <a href="#">Site feedback</a>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <p>Copyright ©2021 All rights reserved | Design & Developed by Uday.</p>
+
+    </div>
+
+
+    <!----------------------Scripts---------------------->
+
+    <!---------plugin for counter up------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!---------bootstrap cdn------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!---------my script------->
+    <script src="home.js"></script>
+
+    <!---------Div animation------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+</body>
+
+</html>
