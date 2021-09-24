@@ -449,6 +449,26 @@ box-shadow: 0px 10px 10px blue;
 
 /**************************** updates page **************************/
 
+.head-cancel{
+    display: inline-block;
+}
+.cancel{
+    float: right;
+    margin-right: 2%;
+}
+.cancel i{
+    font-size: 25px;
+    cursor: pointer;
+    color: blueviolet;
+}
+.cancel i:hover{
+    color: red;
+}
+
+.now-closed{
+    display: none;
+}
+
 .updates-cont{
     width: 100%;
     height: auto;

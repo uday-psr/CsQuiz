@@ -11,6 +11,12 @@ function myFunction(){
    
 }
 
+// function for close update poster
+function closeUpdate(){
+   var cls=document.querySelector(".updates-cont");
+   cls.classList.add("now-closed");
+}
+
 //function for counter up
 
 $('.count').counterUp({
